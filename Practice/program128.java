@@ -1,0 +1,35 @@
+import java.util.*;
+
+class program276
+{
+    public static void main(String A[])
+     {
+        Scanner sobj = new Scanner(System.in);
+        String data = null;
+
+        StringX strobj = new StringX();              //ERROR
+
+        int iRet=0;
+       
+
+
+        System.out.println("Enter String:");
+        data = sobj.nextLine();
+
+
+        iRet = strobj.CountCapital(data);
+          System.out.println("Number of Capita character: "+iRet);
+
+        iRet = strobj.CountSmall(data);
+        System.out.println("Number of Small character: "+iRet);
+
+         iRet = strobj.CountDigits(data);
+        System.out.println("Number of digits are: "+iRet);
+
+          iRet = strobj.CountSmall(data);
+        System.out.println("Number of Spaces  are: "+iRet);
+
+         iRet = strobj.CountSpecial(data);
+        System.out.println("Number of SpecialSymbols  are: "+iRet);
+    }
+}
